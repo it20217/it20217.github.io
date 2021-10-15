@@ -1,0 +1,142 @@
+body {
+  margin: 0 50px;
+  box-sizing: border-box;
+  background: rgb(245, 245, 245);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contents {
+  display: flex;
+  flex-direction: row;
+  background-color: #eaeaea;
+  padding: 30px 0;
+  place-content: space-around;
+  min-width: 20%;
+  border-bottom: 2px solid #7d8597;
+}
+.contents a {
+  color: #124e78;
+}
+.cv-container {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 2px 3px 1px rgb(210, 210, 210);
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: 100;
+}
+a {
+  color: rgb(91, 91, 91);
+}
+ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+#aviation-skills {
+  list-style: none;
+}
+
+#aviation-skills li::before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-size: 24px;
+    background-image: url("../image/Transport_Plane.png");
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+ul li {
+  font-style: italic;
+  margin: 10px 0;
+  line-height: 36px;
+} 
+#highlight {
+  text-decoration: underline;
+  font-weight: 800;
+}
+.header {
+  display: flex;
+  border-bottom: 2px solid #7d8597;
+}
+.person-image {
+  margin: auto;
+}
+.header-section-left {
+  width: 70%;
+  margin-right: 20px;
+}
+.header-name {
+  margin: 0 30px;
+}
+.sub-header {
+  margin: 0 30px;
+  font-style: italic;
+}
+.contact-information {
+  margin: 0 60px;
+  text-align: right;
+}
+.section {
+  display: flex;
+}
+
+.section-name {
+  min-width: 30%;
+  text-align: center;
+}
+.section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 2px solid #7d8597; ;
+}
+#person-profile {
+  border-top: none;
+}
+.work-time-span {
+  font-size: 1rem;
+  color: #7d8597;
+}
+.employer-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.work-position {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.list-container {
+  display: flex;
+  place-content: center;
+
+}
+
+@media all and
+  (max-device-width: 1024px) { 
+    #aviation-skills {
+      margin-left: -10px;
+    }
+    .list-container {
+      flex-direction: column;
+    }
+    
+
+}
+
+
+	
+
+
+
